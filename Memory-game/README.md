@@ -1,6 +1,6 @@
 For creating this game I followed the indications from https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/
 
-For this game used:
+For this game we used:
 1.push()
 2.queryselector()
 3.setAttribute()
