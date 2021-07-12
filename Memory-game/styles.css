@@ -1,13 +1,34 @@
 h1,h2{
     text-align: center;
 }
+header{
+    margin: auto;
+    width: 800px;
+    background-color: #ffeee6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    margin: auto;
+    width:  600px;
+    height: 426px;
+    background-image: url('images/pexels-james-wheeler-3988366.jpg');
+    display: flex;
+}
+
 .grid{
     display: flex;
     flex-wrap: wrap;
     height: 300px;
     width: 400px;
     margin: auto;
+    margin-top: 63px;
+    background-color: #b3ff66;
+    border-radius: .5rem;
+    padding: 10px;
 }
 img{
     width: 100px;
+}
+body{
+    background-color:  #ffccb3;
 }
