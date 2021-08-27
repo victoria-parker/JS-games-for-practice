@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(35deg,#ff7fff,#7f7fff);
+    background-attachment: fixed;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#stories{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#player1,#player2{
+    width: 600px;
+    height: auto;
+    border: 1px solid black;
+    background-color: #ffdfff;
+    padding: 1rem;
+}
+
