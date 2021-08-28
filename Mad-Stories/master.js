@@ -1,4 +1,4 @@
-alert('We are going to play a game called Mad Libs')
+alert('We are going to play a game called Mad Stories')
 alert('This game is about building stories with the other players, please complete the questions asked to build the story')
 var confirmar=confirm('Are you ready to play?')
 
