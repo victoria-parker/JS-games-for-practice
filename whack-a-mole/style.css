@@ -1,3 +1,9 @@
+body{
+    display: flex;
+}
+#info{
+    text-align: center;
+}
 .square{
     width:200px;
     height: 200px;
