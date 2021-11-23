@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.play{
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    display: inline-block;
+    margin:auto;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+#btn-one{
+    background-color: red;
+}
+#btn-two{
+    background-color: blue;
+}
+h1{
+    text-align: center;
+}
+
+#contenedor{
+    margin: auto;
+    margin-top: 10px;
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 200px;
+}
