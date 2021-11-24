@@ -1,34 +1,34 @@
-//const nameOne=prompt("Name of player One");
-//const nameTwo=prompt("Name of player two");
-//const h2PlayerOne=document.getElementById("h2-player-one");
-//const h2PlayerTwo=document.getElementById("h2-player-two");
-const imgPlayerOne=document.getElementById("img-player-one");
-const imgPlayerTwo=document.getElementById("img-player-two");
-
-
-/* Put the names of the players */
-//h2PlayerOne.textContent+=nameOne;
-//h2PlayerTwo.textContent+=nameTwo;
 
 const hands=["paper","rock","scissors"];
+const playBtnOne=document.getElementById("btn-one");
+const playBtnTwo=document.getElementById("btn-two");
+const imgHolderOne=document.getElementById("img-holder-one");
+const imgHolderTwo=document.getElementById("img-holder-two");
+let countOneClicks=0;
+let countTwoClicks=0;
 
 function randomHands(){
     let i=Math.floor(Math.random()*3)
     return "images/"+hands[i]+".svg"
 }
 
-const playBtnOne=document.getElementById("btn-one");
+function renderImg(div){
+    let img=document.createElement("img");
+    img.src=randomHands();    
+    div.appendChild(img);
+}
+
 
 playBtnOne.addEventListener("click", function(){
-    var img=document.createElement("img");
-    img.src=randomHands();
-    imgPlayerOne.appendChild(img);
-})
-
-const playBtnTwo=document.getElementById("btn-two");
+    countOneClicks++;
+    if(countOneClicks<=3){
+    renderImg(imgHolderOne)
+    }
+} )
 
 playBtnTwo.addEventListener("click", function(){
-    var img=document.createElement("img");
-    img.src=randomHands();
-    imgPlayerTwo.appendChild(img);
-})
+    countTwoClicks++;
+    if(countTwoClicks <=3){
+    renderImg(imgHolderTwo)
+    }
+} )
